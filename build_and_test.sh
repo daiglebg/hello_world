@@ -3,7 +3,7 @@
 rm -rf test-output
 rm -f com/helloworld/*.class
 rm -f com/helloworld/*.jar
-exit 0
+#exit 0
 
 echo
 echo "Compile HelloWorld/HelloWorld.java"
