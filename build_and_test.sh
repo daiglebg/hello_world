@@ -60,7 +60,7 @@ if [ "$1" = "build" ]; then
 fi
 
 if [ "$1" = "test" ]; then
-  do_build
+  do_test
   exit $?
 fi
 

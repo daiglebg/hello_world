@@ -9,6 +9,7 @@ The ``HelloWorld`` package structure is ::
   |   `-- HelloWorld.java
   |   `-- TestHelloWorld.java
   |-- lib
+  |-- build_and_test.sh
   |-- testng.xml
   |-- Manifest.txt
   `-- README.md
