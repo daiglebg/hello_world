@@ -1,33 +1,33 @@
 #!/bin/bash
 
 rm -rf test-output
-rm -f HelloWorld/*.class
-rm -f HelloWorld/*.jar
-#exit 0
+rm -f com/helloworld/*.class
+rm -f com/helloworld/*.jar
+exit 0
 
 echo
 echo "Compile HelloWorld/HelloWorld.java"
-javac HelloWorld/HelloWorld.java
+javac com/helloworld/HelloWorld.java
 
 echo
 echo "Run HelloWorld main class"
-java -cp . HelloWorld.HelloWorld
+java com.helloworld.HelloWorld
 
 echo
 echo "Create JAR file"
-jar cfme HelloWorld/HelloWorld.jar Manifest.txt HelloWorld.HelloWorld HelloWorld/HelloWorld.class
+jar cfme com/helloworld/HelloWorld.jar Manifest.txt com.helloworld.HelloWorld com/helloworld/HelloWorld.class
 
 echo
 echo "Run the HelloWorld.jar file"
-java -jar HelloWorld/HelloWorld.jar
+java -jar com/helloworld/HelloWorld.jar
 
 
 echo
 echo "Compile HelloWorld/TestHelloWorld.java"
-javac -cp .:lib/* HelloWorld/TestHelloWorld.java
+javac -cp .:lib/* com/helloworld/TestHelloWorld.java
 
 echo
 echo "Run the HelloWorld TestNG"
 #java -cp "path-tojar/testng.jar:path_to_yourtest_classes" org.testng.TestNG testng.xml
-java -cp ".:HelloWorld:lib/*" org.testng.TestNG testng.xml
+java -cp ".:com/helloworld:lib/*" org.testng.TestNG testng.xml
 

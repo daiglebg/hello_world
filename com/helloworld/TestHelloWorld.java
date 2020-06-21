@@ -1,3 +1,5 @@
+package com.helloworld;
+
 import org.testng.annotations.Test;
 
 public class TestHelloWorld {

@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="ExampleSuite" verbose="1" >
-  <test name="HelloWorldExample">
+<suite name="TestHelloWorld Suite" verbose="1" >
+  <test name="TestHelloWorld">
     <classes>
-      <class name="TestHelloWorld"/>
+      <class name="com.helloworld.TestHelloWorld"/>
     </classes>
   </test>
 </suite>
